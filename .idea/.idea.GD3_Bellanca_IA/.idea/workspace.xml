@@ -8,9 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048dc987-fdca-49fb-80b1-2946e2ad7962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GD3_Bellanca_IA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GD3_Bellanca_IA/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/AIC_Grunt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/AIC_Grunt.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/BT_Grunt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/BT_Grunt.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,7 @@
       <option name="presentableId" value="Default" />
       <updated>1739799222924</updated>
       <workItem from="1739799223930" duration="1837000" />
-      <workItem from="1739801669294" duration="365000" />
+      <workItem from="1739801669294" duration="494000" />
     </task>
     <servers />
   </component>
