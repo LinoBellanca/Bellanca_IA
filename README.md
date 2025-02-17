@@ -1,2 +1,0 @@
-# Bellanca_IA
- 
