@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="048dc987-fdca-49fb-80b1-2946e2ad7962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/AIC_Grunt.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game/Blueprints/NPC_AI/AIC_Grunt.uasset" afterDir="false" />
-    </list>
+    <list default="true" id="048dc987-fdca-49fb-80b1-2946e2ad7962" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
