@@ -15,7 +15,7 @@ class GD3_BELLANCA_IA_API AGruntController : public AAIController
 	GENERATED_BODY()
 	
 public:
-	void GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const override;
+	virtual void GetActorEyesViewPoint(FVector& OutLocation, FRotator& OutRotation) const override;
 	UFUNCTION(BlueprintImplementableEvent, Category="GruntController")
 	void DetermineAISightPerceptionViewPoint(FVector& OutLocation, FRotator& OutRotation) const;
 };
