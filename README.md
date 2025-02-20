@@ -97,5 +97,6 @@ NOTES :
 	-On joue une espèce de créature qui doit s'échapper d'un complexe que ça soit une prison ou un labo je suis pas sûr
 	-La créature a un design qui fait un peu peur, mais ses animations le rendent ridicule
 	-il est complétement inoffensif avec ses petits bras et ça justifie le fait qu'il n'attaque pas juste les gardes et qu'il doit les éviter à tout prix
-	-De même avec les gardes, je leur ait donné des masques à gaz pour justifier leur champs de vision étroit, et qu'on ne voit pas leurs expressions
+	-De même avec les gardes, je leur ait donné des masques à gaz pour qu'on ne voit pas leurs expressions et pour justifier leur champs de vision étroit
+	(c'est d'ailleurs aussi pour ça qu'on est dans un batiment sombre, pour qu'ils ne voient pas de très loin)
 	-Ils ont un gros fusil bien en évidence pour bien montrer qu'ils sont dangereux et qu'on ne doit pas les croiser, mais on peut les voir parfois se remettre bien dans leur combinaison (élément de gameplay)
