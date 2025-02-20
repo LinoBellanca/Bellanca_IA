@@ -2,6 +2,9 @@
  
  Tout le contenu important se trouve dans le dossier Game et Meshes pour les AnimBlueprints (Plus le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
 
+ Pour voir l'IA en action, la map TrueLevel
+ Pour tester l'IA, la map Map
+
  L'IA en question est le BP_MaskGrunt
  
  Il peut :
@@ -100,3 +103,4 @@ NOTES :
 	-De même avec les gardes, je leur ait donné des masques à gaz pour qu'on ne voit pas leurs expressions et pour justifier leur champs de vision étroit
 	(c'est d'ailleurs aussi pour ça qu'on est dans un batiment sombre, pour qu'ils ne voient pas de très loin)
 	-Ils ont un gros fusil bien en évidence pour bien montrer qu'ils sont dangereux et qu'on ne doit pas les croiser, mais on peut les voir parfois se remettre bien dans leur combinaison (élément de gameplay)
+-Le TrueLevel paraît impossible mais en vrai j'ai déjà réussi plusieurs fois (mais jamais sans me faire repéré au moins une fois par contre)
