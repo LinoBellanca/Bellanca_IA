@@ -1,6 +1,6 @@
 ﻿# Bellanca_IA
  
- Tout le contenu important se trouve dans le dossier Game et Meshes pour les AnimBlueprints (Plus le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
+ Tout le contenu important se trouve dans les dossier Game et Meshes pour les AnimBlueprints (Plus le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
 
  Pour voir l'IA en action, la map TrueLevel
  Pour tester l'IA, la map Map
@@ -19,6 +19,8 @@
 			-S'il redétecte le joueur, il passera directement en mode inspection sans faire l'animation de sursaut
 			-S'il ne voit plus le joueur au bon d'un certain temps, il l'oublie, la prochaine fois qu'il le vera il rejouera l'animation de sursaut
 	-Quand le joueur meurt, il ne peut plus le détecter
+		-Cela vaut pour CHACUN d'entre eux quand il y en a plusieurs, la mort du joueur envoit via un Event Dispatcher un signal qui les empêche tous de détecter le joueur
+  		une fois mort
 
  -Patrouiller de points en points
 	-Quand il arrive sur un Checkpoint, il regarde à gauche et à droite avant de reprendre sa marche
