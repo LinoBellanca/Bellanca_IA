@@ -1,33 +1,33 @@
 ﻿# Bellanca_IA
  
- Tout le contenu important se trouve dans les dossier Game et Meshes pour les AnimBlueprints (Plus le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
+ Tout le contenu important se trouve dans le dossier Game, + les AnimBlueprints où j'ai fait des trucs dans le dossier Meshes (+ le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
 
- Pour voir l'IA en action, la map TrueLevel
- Pour tester l'IA, la map Map
+ Pour voir l'IA en action avec le Level Design, allez sur la map TrueLevel
+ Pour tester l'IA et son comportement en changeant les Checkpoints etc, allez sur la map Map
 
  L'IA en question est le BP_MaskGrunt
  
  Il peut :
  -Détecter le joueur avec un AIPerception
 	-Le AIPerception suit les mouvements de la tête du mesh grâce à une fonction CPP, ainsi il peut tourner la tête pour voir tout autour de lui
-	-Quand il détecte le joueur, il joue une animation de sursaut où il ne bouge plus et ne peut plus rien faire d'autre, il passe ensuite en mode Traque et/ou Inspection
-		-En mode Inspection, il s'approchera doucement du joueur en le visant, si le joueur reste dans son champs de vision pendant + de 5 secondes, il lui tire dessus
+	-Quand il détecte le joueur, il joue une animation de sursaut où il ne bouge plus et ne peut plus rien faire d'autre, il passe ensuite en mode Traque et Inspection
+		-En mode Inspection, il s'approche doucement du joueur en le visant, si le joueur reste dans son champs de vision pendant + de 5 secondes, il lui tire dessus
 		-Si le joueur s'approche de beaucoup trop près de lui, il lui tire aussi dessus même si les 5 secondes ne se sont pas écoulées
 	-Si le joueur quitte le champs de vision, le mode traque prend le dessus
 		-En mode Traque, il récupère la dernière position du joueur avant que ce dernier ne quitte son champs de vision, puis il court vers cette position
-		-Une fois sur la position, il tournera la tête pour tenter de trouver le joueur
-			-S'il redétecte le joueur, il passera directement en mode inspection sans faire l'animation de sursaut
+		-Une fois sur la position, il tourne la tête à droite et à gauche pour tenter de trouver le joueur
+			-S'il redétecte le joueur, il repasse directement en mode Inspection sans faire l'animation de sursaut
 			-S'il ne voit plus le joueur au bon d'un certain temps, il l'oublie, la prochaine fois qu'il le vera il rejouera l'animation de sursaut
 	-Quand le joueur meurt, il ne peut plus le détecter
 		-Cela vaut pour CHACUN d'entre eux quand il y en a plusieurs, la mort du joueur envoit via un Event Dispatcher un signal qui les empêche tous de détecter le joueur
   		une fois mort
 
  -Patrouiller de points en points
-	-Quand il arrive sur un Checkpoint, il regarde à gauche et à droite avant de reprendre sa marche
+	-Quand il arrive sur un Checkpoint, il s'arrête et regarde à gauche et à droite avant de reprendre sa marche
 	-Quand il arrive au bout de sa liste de Checkpoints, il la reprend à l'envers ([A to B to C to B to A] au lieu de [A to B to C to A])
-	-Quand sa prochaine destination est derrière lui (quand il arrive au bout de sa liste de Checkpoints ou au début si'il la prend à l'envers),
-	il joue une animation où il fait un 180° (50% de chance de se tourner soit du côté gauche soit du côté droit)
-	-Toutes les 10 secondes il a 1 chance sur 4 de s'arrêter pour faire une animation alternative ou il se remet en place pendant quelques secondes
+	-Quand sa prochaine destination est derrière lui (sur la map True Level, quand il arrive au bout de sa liste de Checkpoints ou au début s'il la prend à l'envers),
+	il joue une animation où il tourne à 180° sur lui même (il a 50% de chance de se tourner soit du côté gauche soit du côté droit)
+	-Pendant sa marche, toutes les 10 secondes il a 1 chance sur 4 de s'arrêter pour faire une animation alternative ou il se remet en place pendant quelques secondes
 
 
 	
@@ -97,12 +97,12 @@ l’ennemi
 
 NOTES :
 -J'ai préféré mettre le Sursaut quand le joueur est détecté plutôt qu'à la confirmation car c'est plus logique selon moi
--Aussi à la base je voulait mettre un système de masques que le joueur met pour que l'IA ait différentes réactions au bout des 5 secondes
+-Aussi à la base je voulait mettre un système de masques que le joueur porte pour que l'IA ait différentes réactions au bout des 5 secondes
 -Vu que le contexte narratif est un "?" j'y ai mit ce qui me passait par la tête, du coup, pour refléter ce "?" on sait pas vraiment si c'est le joueur le gentil et les gardes les méchant ou l'inverse
 	-On joue une espèce de créature qui doit s'échapper d'un complexe que ça soit une prison ou un labo je suis pas sûr
 	-La créature a un design qui fait un peu peur, mais ses animations le rendent ridicule
 	-il est complétement inoffensif avec ses petits bras et ça justifie le fait qu'il n'attaque pas juste les gardes et qu'il doit les éviter à tout prix
 	-De même avec les gardes, je leur ait donné des masques à gaz pour qu'on ne voit pas leurs expressions et pour justifier leur champs de vision étroit
-	(c'est d'ailleurs aussi pour ça qu'on est dans un batiment sombre, pour qu'ils ne voient pas de très loin)
+	(c'est d'ailleurs aussi pour ça qu'on est dans un batiment sombre, pour dire qu'ils ne voient bien pas de très loin et qu'ils doivent donc nous viser pendant 5 secondes)
 	-Ils ont un gros fusil bien en évidence pour bien montrer qu'ils sont dangereux et qu'on ne doit pas les croiser, mais on peut les voir parfois se remettre bien dans leur combinaison (élément de gameplay)
 -Le TrueLevel paraît impossible mais en vrai j'ai déjà réussi plusieurs fois (mais jamais sans me faire repéré au moins une fois par contre)
