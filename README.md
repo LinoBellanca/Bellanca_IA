@@ -1,6 +1,6 @@
 ﻿# Bellanca_IA
  
- Tout le contenu important se trouve dans le dossier Game, + les AnimBlueprints où j'ai fait des trucs dans le dossier Meshes (+ le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
+ Tout le contenu important se trouve dans le dossier Game + le dossier Meshes où j'ai fait des trucs dans les AnimBlueprints (+ le BP_Checkpoint dans Cours_AI mais il est pas si important que ça en vrai)
 
  Pour voir l'IA en action avec le Level Design, allez sur la map TrueLevel
  Pour tester l'IA et son comportement en changeant les Checkpoints etc, allez sur la map Map
